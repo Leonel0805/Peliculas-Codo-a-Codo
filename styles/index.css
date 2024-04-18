@@ -12,7 +12,7 @@ a{
 }
 
 body{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* NAVBAR */
@@ -66,13 +66,29 @@ body{
     color: black;
 }
 
+
+/* SECTION PRINCIPAL */
+
 .section__principal{
+    position: relative;
+    width: 100%;
     height: 90vh;
+    background-image: url("../resources/images/peliculas.jpg");
+    background-size: cover;
 
 }
 
+.section__overlay{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(2, 2, 2, 0.425);
+    position: absolute;
+    z-index: 10;
+}
+
+
 .section__container{
-    width: 50%;
+    width: 60%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -80,28 +96,32 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid black;
     box-sizing: border-box;
+    position: relative;
+    z-index: 30;
+
 }
 
 .section__titulo{
     font-size: 3.2em;
     text-wrap: balance;
     margin-bottom: 32px;
+    color: white;
 }
 
 .section__subtitulo{
     font-size: 1.7em;
     margin-bottom: 16px;
+    color: white;
 }
 
 .section__button{
-
+    color: white;
     margin: 0px 8px;
-    padding: 8px 24px;
-    font-size: 18px;
+    padding: 12px 24px;
+    font-size: 22px;
     background-color: rgb(0, 194, 58);
-  
+    border: none;
     border-radius: 5px;
     transition: box-shadow 0.5s;
 
@@ -111,3 +131,56 @@ body{
 .section__button:hover{
     box-shadow: 0px 0px 8px rgba(129, 129, 129, 0.911);
 }
+
+/* SECTION SEARCH */
+
+.section__search{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__search__container{
+    width: 70%;
+    height: 50%;
+    text-align: center;
+    margin-top: auto;
+    
+}
+
+.section__search__titulo{
+    font-size: 2.7em;
+}
+
+.section__search__input{
+    width: 45%;
+    margin-top: 16px;
+    font-size: 1.6em;
+    border-radius: 30px;
+    padding: 8px 16px;
+}
+
+.section__search__button{
+    color: white;
+    padding: 16px 24px;
+    font-size: 1.2em;
+    background-color: rgb(0, 194, 58);
+    border: none;
+    border-radius: 30px;
+}
+
+.section__search__line{
+    width: 70%;
+    height: 5px;
+    margin-top: auto;
+    background-color: rgb(0, 194, 58);
+    border-radius: 20px;
+
+}
+
+/* FOOTER */
