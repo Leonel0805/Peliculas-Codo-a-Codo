@@ -281,8 +281,7 @@ main{
 /* SECTION TOP */
 .section__top{
     width: 100%;
-    height: 500px;
-    background-color: rgb(42, 117, 117);
+    min-height: 400px;
 }
 
 .section__top__container{
@@ -291,21 +290,32 @@ main{
     text-align: center;
     font-size: 1.4em;
  /* Desplazamiento horizontal automático */
-    white-space: nowrap; /
+    white-space: nowrap;
+    margin-top: 24px; 
   
 }
 
 .section__top__allcards{
-    background-color: red;
-    width: 70%;
-    height: 250px;
+    width: 80%;
     padding: 8px;
     overflow-x: auto;
     margin: auto;
+    margin-top: 16px;
+}
+
+.section__top__card{
+    display: inline-block;
+    margin: 0px 16px;
+    
 }
 
 .section__top__image{
-    width: 150px;
+    width: 170px;
+    height: 240px;
+    margin: 0px 0px;
+    padding: 0px;
+    border-radius: 8px;
+
 }
 
 /* FOOTER */
