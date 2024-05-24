@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/inicio_sesion.css">
+    <link rel="stylesheet" href="../styles/registro.css">
+
 
     <title>Free Pelis | Registrarse</title>
 </head>
 <body>
 
     <main>
-        <section class="iniciar-sesion">
-            <div class="iniciar-sesion__container">
-                <h1 class="iniciar-sesion__title">Registrarse</h1>
+        <section class="section">
+            <div class="section__container">
+                <h1 class="section__title">Registrarse</h1>
 
-                <form action="" class="iniciar-sesion__form">
+                <form action="" class="section__form">
+                    <label for="name"></label>
+                    <input class="section__input" type="text" id="name" name="name" placeholder="Nombre" required>
                     <label for="email"></label>
-                    <input class="iniciar-sesion__input" type="email" id="email" name="email" placeholder="Email" required>
+                    <input class="section__input" type="email" id="email" name="email" placeholder="Email" required>
                     <label for="username"></label>
-                    <input class="iniciar-sesion__input" type="password" id="password" name="password" placeholder="Password" required>
+                    <input class="section__input" type="password" id="password" name="password" placeholder="Contraseña" required>
 
-                    <button class="iniciar-sesion__form__button">Crear Cuenta</button>
+                    <label for="cumpleaños"></label>
+                    <input class="section__input" type="date" id="cumpleaños" name="cumpleaños" placeholder="" required>
+                    
+                    <label for="opciones"></label>
+                    <select id="opciones" name="opciones" class="section__input input--opciones">
+                        <option value="">País</option>
+                        <option value="opcion1">Argentina</option>
+                        <option value="opcion2">Brasil</option>
+                        <option value="opcion3">Chile</option>
+                    
+                        
+                    </select>
+
+                   
+
+                    <button class="section__form__button">Crear Cuenta</button>
                 </form>
 
-                <p class="iniciar-sesion__link">¿Ya tenés cuenta? <a href="../templates/inicio_sesion.html">Iniciar Sesión</a></p>
+                <p class="section__link">¿Ya tenés cuenta? <a href="../templates/inicio_sesion.html">Iniciar Sesión</a></p>
 
             </div>
         </section>
