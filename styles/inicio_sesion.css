@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../resources/images/inicio-sesion/background-films.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iniciar-sesion{
+    width: 30vw;
+    height: 80vh;
+    margin: auto;
+    background-color: rgb(32, 49, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 32px;
+    
+
+}
+
+.iniciar-sesion__container{
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.iniciar-sesion__title{
+    color: white;
+    font-size: 2em;
+    text-align: left;
+}
+
+
+
+.iniciar-sesion__input{
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    list-style: none;
+    margin: 0 auto;
+    margin: 16px 0;
+    padding: 16px;
+    border-radius: 8px;
+    border:none;
+    border: 2px solid rgb(0, 194, 58);
+    box-sizing: border-box;
+    color: rgb(172, 172, 172);
+    outline: none;
+
+}
+
+.iniciar-sesion__form__button{
+    color: white;
+    background-color: rgb(0, 194, 58);
+    width: 100%;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border:none;
+    font-size: 1.4em;
+}
+
+.iniciar-sesion__link{
+    color: white;
+    margin-top: 16px;
+    font-size: 1.2em;
+}
+
+.iniciar-sesion__link a{
+    color: rgb(0, 194, 58);
+}
