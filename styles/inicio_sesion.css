@@ -31,9 +31,8 @@ main{
 
 /* INICIAR SESIÓN */
 .section{
-    width: 80%; /* Ancho inicial del contenedor */
-      /* Ancho mínimo del contenedor */
-    height: 80%; /* Altura del contenedor */
+    width: 80%; 
+    height: 80%; 
     background-color: rgb(32, 49, 41);
     margin: auto;
     margin-top: 10%;
@@ -44,8 +43,7 @@ main{
     box-sizing: border-box;
     padding: 40px;
     min-width: 350px;
-    
-
+    box-shadow: 0 0 100px black;
 }
 
 .section__container{
