@@ -105,3 +105,9 @@ main{
 .section__link a{
     color: rgb(0, 194, 58);
 }
+
+.section__error{
+    color: rgb(207, 0, 0);
+    margin-top: 8px;
+    width: 100%;
+}

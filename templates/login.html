@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/inicio_sesion.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>Free Pelis | Iniciar Sesión</title>
 
 </head>
@@ -18,17 +18,20 @@
                     <label for="email"></label>
                     <input class="section__input" type="email" id="email" name="email" placeholder="Email" required>
                     <label for="username"></label>
-                    <input class="section__input" type="password" id="password" name="password" placeholder="Password" required>
+                    <input class="section__input" type="password" id="password" name="password" placeholder="Contraseña" required>
 
                     <button class="section__form__button">Iniciar Sesión</button>
                 </form>
 
                 <p class="section__link">¿No tenés cuenta? <a href="../templates/register.html">Registrate</a></p>
 
+                <p class="section__error"></p>
             </div>
         </section>
     </main>
 
     
+        
+    <script src="../js/validate.js"></script>
 </body>
 </html>
