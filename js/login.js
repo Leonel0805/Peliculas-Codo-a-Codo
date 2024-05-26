@@ -1,34 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Seleccionar elementos del formulario
     const formRegister = document.querySelector(".section__form");
-    const inputName = document.querySelector("#name");
     const inputEmail = document.querySelector("#email");
     const inputPassword = document.querySelector("#password");
+
+
     const submitButton = document.querySelector(".section__form__button");
 
-    // Agregar clase a .section__container para modificarlo sin afectar el formulario de login
-    const sectionContainer = document.querySelector(".section__container");
-    sectionContainer.classList.add("section__container__form");
 
     // Expresiones regulares para validación
-    const userNameRegex = /^[a-zA-Z0-9\_\-]{4,16}$/;
-    const emailRegex = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+\.[a-zA-Z]+$/;
+
+    // Modifico para que tome .com.ar
+    const emailRegex = /^[a-zA-Z0-9_.-]+@([\w-]+\.)+[\w-]{2,4}$/;
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&_.-])[A-Za-z\d@$!%*?&_.-]{4,12}$/;
 
-    // Estado de validación de campos
+     // Estado de validación de campos
     const estadoValidacionCampos = {
-        name: false,
         email: false,
-        password: false
+        password: false,
     };
 
     // Validar campos en cada input
-    inputName.addEventListener("input", () => 
-        validarCampo(userNameRegex, inputName, "El nombre sólo puede contener [4-16] dígitos, letras y guión bajo."));
     inputEmail.addEventListener("input", () => 
         validarCampo(emailRegex, inputEmail, "El email no es válido."));
     inputPassword.addEventListener("input", () => 
-        validarCampo(passwordRegex, inputPassword, "La contraseña debe contener al menos una mayúscula, una minúscula, un número y un carácter especial, y tener entre 4 y 12 caracteres."));
+        validarCampo(passwordRegex, inputPassword, "La contraseña no es válida"));
 
     // Función para validar campos
     function validarCampo(regularExpresion, campo, mensaje) {
@@ -72,10 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Función para enviar formulario
     function enviarFormulario() {
-        if (estadoValidacionCampos.name && 
-            estadoValidacionCampos.email && 
+        if (estadoValidacionCampos.email && 
             estadoValidacionCampos.password) {
-            cearCartelSubmitFormulario("alertaExito", "Te registraste correctamente");
+            cearCartelSubmitFormulario("alertaExito", "Inicio de Sesión exitoso");
             formRegister.reset();
         } else {
             cearCartelSubmitFormulario("alertaError", "Complete los campos correctamente");

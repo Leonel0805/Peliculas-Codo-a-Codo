@@ -6,3 +6,14 @@
 .input--opciones{
     background-color: rgb(32, 49, 41);
 }
+
+/* solo para corregir estilo de formulario registro */
+.section__container__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section__container__form .section__title{
+    margin-top: 0;
+}
