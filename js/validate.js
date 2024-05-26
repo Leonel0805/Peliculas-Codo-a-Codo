@@ -2,6 +2,7 @@
 //     alert('Se hizo clic en la página');
 // });
 
+// pequeño test, sin local store
 const email = "test@gmail.com"
 const password = "test123"
 
