@@ -8,7 +8,6 @@ const section_tendencias = document.querySelector('.section__tendencias__allcard
 const section_top = document.querySelector('.section__top__allcards');
 
 
-
 // Consumimos api TMDB
 function cargarDatos(api_key){
 
@@ -23,7 +22,6 @@ function cargarDatos(api_key){
                 if( json.poster_path){
                     url_img = URL_BASE + json.poster_path
                     mostrarPelicula(url_img, 'section__tendencias__card', 'section__tendencias__image');
-    
                 }else{
                     console.log('no poster')
                 }
@@ -31,16 +29,13 @@ function cargarDatos(api_key){
             })
             .catch( error => {
                 console.log(error)
-            })
-    
-    ;
+            });
     }   
 
 }
 
 // Obtener top peliculas
 function cargarTop(api_key){
-
 
     fetch (`https://api.themoviedb.org/3/movie/top_rated?api_key=2b9e8a23219886ffe72d2eb854de4b28`)
         .then( response =>{
@@ -57,15 +52,11 @@ function cargarTop(api_key){
                 mostrarPelicula(url_img, 'section__top__card', 'section__top__image')
             }
 
-
         })
         .catch( error => {
             console.log(error)
         });
-
-
 }
-
 
 // Creamos un nuevo elemento agregando la imagen obtenida de la API
 function mostrarPelicula(url_img, nameClass, imgClass){
@@ -80,16 +71,13 @@ function mostrarPelicula(url_img, nameClass, imgClass){
     // Agregamos el img al div creado
     newElement.appendChild(img);
 
-    // Agregramos el nuevo elemento al container de las cards
-
+    // Agregramos el nuevo elemento dependiendo del container de las cards
     if (nameClass == 'section__tendencias__card'){
         section_tendencias.appendChild(newElement);
-
     }else{
         section_top.appendChild(newElement);
     }
 }
-
 
 cargarDatos();
 cargarTop();
