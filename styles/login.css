@@ -111,3 +111,33 @@ main{
     margin-top: 8px;
     width: 100%;
 }
+
+/* estilos para las alertas */
+.alerta{
+    color: white;
+    font-size: 0.8em;
+    text-align: start;
+}
+
+.section__form .alertaExito,
+.section__form .alertaError{
+    display: block;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.section__form .error{
+    border: 2px solid darkred;
+}
+
+.section__form .alertaExito{
+    background-color: rgb(0, 194, 58);
+}
+
+.section__form .alertaError{
+    background-color: darkred;
+}
+
+
